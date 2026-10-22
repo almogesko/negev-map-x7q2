@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#ffffff">
+<title>מפת שותפים בנגב</title>
+<link rel="preload" href="font-heebo-hebrew.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#content">דילוג לתוכן</a>
+
+<header class="hd">
+  <div class="hd-in">
+    <a class="brand" href="#" aria-label="מפת שותפים בנגב">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 28V4H9.5L22.5 21V4H28V28H22.5L9.5 11V28Z"/><rect class="arm" x="4" y="14" width="5.5" height="4"/></svg>
+      <span>מפת שותפים בנגב</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="תצוגה">
+      <button role="tab" data-tab="orgs"><span class="l-long">גופים ותוכניות</span><span class="l-short">גופים</span> <b id="nOrgs"></b></button>
+      <button role="tab" data-tab="people"><span>אנשים</span> <b id="nPeople"></b></button>
+      <button role="tab" data-tab="saved"><span class="l-long">הרשימה שלי</span><span class="l-short">שמורים</span> <b id="nSaved">0</b></button>
+      <button role="tab" data-tab="plan"><span class="l-long">תוכנית פעולה</span><span class="l-short">תוכנית</span></button>
+      <button role="tab" data-tab="about"><span class="l-long">מקורות ואימות</span><span class="l-short">מקורות</span></button>
+    </nav>
+    <div class="tools">
+      <div class="menu" id="exportMenu">
+        <button class="btn btn-ghost btn-sm" id="exportBtn" aria-haspopup="true" aria-expanded="false">ייצוא CSV</button>
+        <div class="menu-pop" hidden>
+          <button data-export="people">כל אנשי הקשר</button>
+          <button data-export="view">התוצאות המוצגות</button>
+          <button data-export="saved">הרשימה שלי</button>
+        </div>
+      </div>
+      <button class="btn btn-ghost btn-sm" id="printBtn">הדפסה</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="pghd">
+    <div class="wrap pghd-grid">
+      <div>
+        <p class="k">מסמך עבודה לשותפים · נבדק ב־22.10.2026</p>
+        <h1 id="title"></h1>
+        <p class="lead" id="subtitle"></p>
+        <div class="hero-cta"><button class="btn" data-go="pai">גופי Physical AI</button><button class="btn btn-ghost" data-go="plan">תוכנית פעולה</button></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="wrap legend3" role="list" aria-label="מקרא פרטי קשר">
+      <div class="lg green" role="listitem"><i>1</i><strong>קשר שנמסר</strong><span>נייד שהגיע בכרטיס קשר ולא נבדק בשיחה</span></div>
+      <div class="lg blue" role="listitem"><i>2</i><strong>מקצועי ציבורי</strong><span>פרט שפורסם באתר הארגון</span></div>
+      <div class="lg teal" role="listitem"><i>3</i><strong>ערוץ ארגוני</strong><span>כתובת כללית, אינה אישית</span></div>
+    </section>
+
+  <section class="filters surface" id="filters" aria-label="חיפוש וסינון">
+    <div class="wrap fl">
+      <div class="cmd">
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="חיפוש לפי שם, תפקיד, ארגון או תחום" autocomplete="off" aria-label="חיפוש" enterkeyhint="search">
+          <kbd>/</kbd>
+        </label>
+        <button class="btn btn-ghost fl-toggle" id="fToggle" aria-expanded="false" aria-controls="flMore">סינון <b id="fCount"></b></button>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="תחום"></div>
+      <div class="fl-more" id="flMore">
+        <div class="row-f">
+          <select id="region" aria-label="סינון לפי אזור"><option value="">כל האזורים</option></select>
+        </div>
+        <div class="filter-foot">
+          <label class="toggle"><input type="checkbox" id="pai"><span>רק Physical AI</span></label>
+          <label class="toggle"><input type="checkbox" id="priority"><span>רק מי שמומלץ לפנות אליו קודם</span></label>
+        </div>
+      </div>
+      <div class="filter-foot result-line">
+        <span class="count" id="count" aria-live="polite"></span>
+        <button class="tlink" id="reset" hidden>איפוס סינון</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap results" id="content" tabindex="-1"></section>
+</main>
+
+<footer class="ft dark">
+  <div class="wrap ft-in">
+    <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 28V4H9.5L22.5 21V4H28V28H22.5L9.5 11V28Z"/><rect class="arm" x="4" y="14" width="5.5" height="4"/></svg>
+    <div>
+      <p>המיפוי אינו ממצה את הפעילות בנגב. הצעות החיבור הן כיוונים לשיחה, לא אישור לשותפות או למימון.</p>
+      <p>הרשימה האישית וסטטוסי הפנייה נשמרים בדפדפן הזה בלבד, ואינם משותפים בין משתמשים.</p>
+      <p>הקישור נשלח לשותפים בלבד. נא לא להעביר אותו הלאה ולא לפרסם אותו ברשת.</p>
+    </div>
+  </div>
+</footer>
+
+<dialog id="drawer" aria-label="פרופיל">
+  <button class="x" id="closeDrawer" aria-label="סגירה">×</button>
+  <div id="drawerBody"></div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="printArea" aria-hidden="true"></div>
+</body>
+</html>
