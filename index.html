@@ -24,7 +24,7 @@
       <button role="tab" data-tab="orgs"><span class="l-long">גופים ותוכניות</span><span class="l-short">גופים</span> <b id="nOrgs"></b></button>
       <button role="tab" data-tab="people"><span>אנשים</span> <b id="nPeople"></b></button>
       <button role="tab" data-tab="saved"><span class="l-long">הרשימה שלי</span><span class="l-short">שמורים</span> <b id="nSaved">0</b></button>
-      <button role="tab" data-tab="plan"><span class="l-long">תוכנית פעולה</span><span class="l-short">תוכנית</span></button>
+      <button role="tab" data-tab="calls"><span class="l-long">קולות קוראים ומענקים</span><span class="l-short">מענקים</span></button>
       <button role="tab" data-tab="about"><span class="l-long">מקורות ואימות</span><span class="l-short">מקורות</span></button>
     </nav>
     <div class="tools">
@@ -45,17 +45,17 @@
   <section class="pghd">
     <div class="wrap pghd-grid">
       <div>
-        <p class="k">מסמך עבודה לשותפים · נבדק ב־22.10.2026</p>
+        <p class="k">מידע על הגורמים בהייטק בנגב · נבדק ב־22.10.2026</p>
         <h1 id="title"></h1>
         <p class="lead" id="subtitle"></p>
-        <div class="hero-cta"><button class="btn" data-go="pai">גופי Physical AI</button><button class="btn btn-ghost" data-go="plan">תוכנית פעולה</button></div>
+        
       </div>
     </div>
 
   </section>
 
   <section class="wrap legend3" role="list" aria-label="מקרא פרטי קשר">
-      <div class="lg green" role="listitem"><i>1</i><strong>קשר שנמסר</strong><span>נייד שהגיע בכרטיס קשר ולא נבדק בשיחה</span></div>
+      <div class="lg green" role="listitem"><i>1</i><strong>קשר שנמסר</strong><span>תפקיד שנמסר ולא נבדק. הנייד אינו מוצג</span></div>
       <div class="lg blue" role="listitem"><i>2</i><strong>מקצועי ציבורי</strong><span>פרט שפורסם באתר הארגון</span></div>
       <div class="lg teal" role="listitem"><i>3</i><strong>ערוץ ארגוני</strong><span>כתובת כללית, אינה אישית</span></div>
     </section>
@@ -68,15 +68,17 @@
           <input id="q" type="search" placeholder="חיפוש לפי שם, תפקיד, ארגון או תחום" autocomplete="off" aria-label="חיפוש" enterkeyhint="search">
           <kbd>/</kbd>
         </label>
+        <button class="btn btn-ghost add-btn" id="addBtn" aria-label="הוספת איש קשר או חברה" title="הוספת איש קשר או חברה"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>הוספה</span></button>
         <button class="btn btn-ghost fl-toggle" id="fToggle" aria-expanded="false" aria-controls="flMore">סינון <b id="fCount"></b></button>
       </div>
       <div class="chips" id="chips" role="group" aria-label="תחום"></div>
       <div class="fl-more" id="flMore">
         <div class="row-f">
-          <select id="region" aria-label="סינון לפי אזור"><option value="">כל האזורים</option></select>
+          <select id="type" aria-label="סינון לפי סוג גוף"><option value="">כל סוגי הגופים</option></select>
+          <select id="region" aria-label="סינון לפי יישוב או אזור"><option value="">כל היישובים והאזורים</option></select>
         </div>
         <div class="filter-foot">
-          <label class="toggle"><input type="checkbox" id="pai"><span>רק Physical AI</span></label>
+          <label class="toggle"><input type="checkbox" id="hideUnv"><span>הסתר תפקידים שלא אומתו</span></label>
           <label class="toggle"><input type="checkbox" id="priority"><span>רק מי שמומלץ לפנות אליו קודם</span></label>
         </div>
       </div>
@@ -96,7 +98,8 @@
     <div>
       <p>המיפוי אינו ממצה את הפעילות בנגב. הצעות החיבור הן כיוונים לשיחה, לא אישור לשותפות או למימון.</p>
       <p>הרשימה האישית וסטטוסי הפנייה נשמרים בדפדפן הזה בלבד, ואינם משותפים בין משתמשים.</p>
-      <p>הקישור נשלח לשותפים בלבד. נא לא להעביר אותו הלאה ולא לפרסם אותו ברשת.</p>
+      <p>הדף אינו מוגן בסיסמה: כל מי שיש לו את הקישור יכול לפתוח אותו. הוא מסומן לאי־אינדוקס במנועי חיפוש. להגבלת גישה אמיתית מומלץ Cloudflare Access.</p>
+      <p><button class="tlink" data-tab="about" data-anchor="removal">בקשה לתיקון או הסרה</button></p>
     </div>
   </div>
 </footer>
@@ -104,6 +107,30 @@
 <dialog id="drawer" aria-label="פרופיל">
   <button class="x" id="closeDrawer" aria-label="סגירה">×</button>
   <div id="drawerBody"></div>
+</dialog>
+<button id="toTop" class="to-top" aria-label="חזרה למעלה" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
+<dialog id="addDlg" aria-label="הוספת איש קשר או חברה">
+  <button class="x" id="closeAdd" aria-label="סגירה">×</button>
+  <form id="addForm" class="add-form" autocomplete="off">
+    <h2>הוספת איש קשר או חברה</h2>
+    <p class="small">ההוספה נשמרת רק במכשיר הזה. כדי שזה יופיע באתר לכולם, שלחו את ההצעה למי שמתחזק את הדף.</p>
+    <fieldset><legend>סוג</legend>
+      <label class="radio"><input type="radio" name="kind" value="person" checked><span>איש קשר</span></label>
+      <label class="radio"><input type="radio" name="kind" value="org"><span>חברה או גוף</span></label></fieldset>
+    <label>שם<input name="name" required></label>
+    <label>תפקיד או תחום<input name="role"></label>
+    <label>ארגון (לאיש קשר)<input name="orgName"></label>
+    <label>אזור או יישוב<input name="region"></label>
+    <label>טלפון<input name="phone" type="tel" inputmode="tel" dir="ltr"></label>
+    <label>מייל<input name="email" type="email" inputmode="email" dir="ltr"></label>
+    <label>אתר<input name="url" type="url" inputmode="url" dir="ltr"></label>
+    <label>הערה<textarea name="note" rows="2"></textarea></label>
+    <div class="add-actions">
+      <button class="btn" type="submit">שמירה אצלי</button>
+      <button class="btn btn-ghost" type="button" id="addWhats">שליחה בוואטסאפ להוספה לאתר</button>
+      <button class="btn btn-ghost" type="button" id="addCopy">העתקת ההצעה</button>
+    </div>
+  </form>
 </dialog>
 <div id="toast" role="status" aria-live="polite"></div>
 <div id="printArea" aria-hidden="true"></div>

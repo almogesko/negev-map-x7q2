@@ -29,7 +29,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "yazamut",
@@ -56,7 +57,8 @@ window.NEGEV_DATA={
    "logo": "logo-yazamut.svg",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "אקדמיה"
   },
   {
    "id": "dcic",
@@ -87,7 +89,8 @@ window.NEGEV_DATA={
    "logo": "logo-dcic.png",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "innegev",
@@ -118,7 +121,8 @@ window.NEGEV_DATA={
    "logo": "logo-innegev.png",
    "pai": true,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "sapir",
@@ -150,7 +154,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "אקדמיה"
   },
   {
    "id": "westnegev",
@@ -176,7 +181,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "רשות"
   },
   {
    "id": "merage",
@@ -208,7 +214,8 @@ window.NEGEV_DATA={
    "logo": "logo-merage.png",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "קרן"
   },
   {
    "id": "authority",
@@ -235,7 +242,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "רשות"
   },
   {
    "id": "tech7",
@@ -261,7 +269,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "gavyam",
@@ -289,7 +298,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חברה"
   },
   {
    "id": "synergy",
@@ -319,7 +329,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "sibf",
@@ -347,7 +358,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "קרן"
   },
   {
    "id": "homeward",
@@ -376,7 +388,8 @@ window.NEGEV_DATA={
    "logo": "logo-homeward.png",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "ארגון חברתי"
   },
   {
    "id": "kht",
@@ -402,7 +415,8 @@ window.NEGEV_DATA={
    "logo": "logo-kht.png",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "ארגון חברתי"
   },
   {
    "id": "ajeec",
@@ -429,7 +443,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "ארגון חברתי"
   },
   {
    "id": "hinuch",
@@ -458,7 +473,8 @@ window.NEGEV_DATA={
    "logo": "logo-hinuch.webp",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "ארגון חברתי"
   },
   {
    "id": "keren",
@@ -488,7 +504,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "ארגון חברתי"
   },
   {
    "id": "creation",
@@ -519,7 +536,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "p32",
@@ -545,7 +563,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חברה"
   },
   {
    "id": "clalit",
@@ -571,7 +590,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": false
+   "fromMap": false,
+   "type": "חברה"
   },
   {
    "id": "labpai",
@@ -597,7 +617,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "brl",
@@ -623,7 +644,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "isel",
@@ -649,7 +671,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "zarrouk",
@@ -675,7 +698,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "bgn",
@@ -701,7 +725,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "sasi",
@@ -727,7 +752,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "elbit-lab",
@@ -755,7 +781,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חברה"
   },
   {
    "id": "robotican",
@@ -782,7 +809,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חברה"
   },
   {
    "id": "darom",
@@ -808,7 +836,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "mopr",
@@ -835,7 +864,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "resmap",
@@ -888,7 +918,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "קרן"
   },
   {
    "id": "fusion",
@@ -915,7 +946,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "31.10.2026, 12:00 (התארגנות)",
-   "fromMap": true
+   "fromMap": true,
+   "type": "תוכנית וקול קורא"
   },
   {
    "id": "beta",
@@ -941,7 +973,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "26.11.2026, 12:00",
-   "fromMap": true
+   "fromMap": true,
+   "type": "תוכנית וקול קורא"
   },
   {
    "id": "imlabs",
@@ -967,7 +1000,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "augmenta",
@@ -993,7 +1027,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חממה ומרכז חדשנות"
   },
   {
    "id": "meimad",
@@ -1019,7 +1054,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "תוכנית וקול קורא"
   },
   {
    "id": "takuma",
@@ -1045,7 +1081,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": true,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "negev-ministry",
@@ -1071,7 +1108,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "econ-invest",
@@ -1097,7 +1135,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "חלף: 22.10.2026, 13:00",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "rmi",
@@ -1123,7 +1162,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "iia-centers",
@@ -1152,7 +1192,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "gov3303",
@@ -1178,7 +1219,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "תוכנית וקול קורא"
   },
   {
    "id": "bs-core",
@@ -1204,7 +1246,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "תוכנית וקול קורא"
   },
   {
    "id": "atp",
@@ -1230,7 +1273,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "חברה"
   },
   {
    "id": "bidr",
@@ -1256,7 +1300,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "אקדמיה"
   },
   {
    "id": "east-cluster",
@@ -1282,7 +1327,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "רשות"
   },
   {
    "id": "netgev",
@@ -1308,7 +1354,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "ארגון חברתי"
   },
   {
    "id": "regionup",
@@ -1334,7 +1381,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "קרן"
   },
   {
    "id": "yozmot-atid",
@@ -1360,7 +1408,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "ארגון חברתי"
   },
   {
    "id": "ness",
@@ -1386,7 +1435,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "קרן"
   },
   {
    "id": "kkl",
@@ -1412,7 +1462,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "ארגון חברתי"
   },
   {
    "id": "jnfusa",
@@ -1438,7 +1489,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "ארגון חברתי"
   },
   {
    "id": "jfna",
@@ -1464,7 +1516,8 @@ window.NEGEV_DATA={
    "logo": "",
    "pai": false,
    "deadline": "",
-   "fromMap": true
+   "fromMap": true,
+   "type": "ארגון חברתי"
   }
  ],
  "people": [
@@ -1476,7 +1529,7 @@ window.NEGEV_DATA={
    "email": "",
    "phone": "",
    "image": "img-gil.webp",
-   "bio": "בעל ניסיון ביזמות ובניהול בחברות הייטק וביטחון; מתגורר בקיבוץ גבים. נקודת קשר להיכרות עם פעילות החממה והצרכים באזור.",
+   "bio": "בעל ניסיון ביזמות ובניהול בחברות הייטק וביטחון. נקודת קשר להיכרות עם פעילות החממה והצרכים באזור.",
    "source": "https://southup.org/en/about/",
    "provided": true,
    "verified": true,
@@ -1560,91 +1613,91 @@ window.NEGEV_DATA={
   },
   {
    "id": "keren-mac",
-   "name": "קרן מכבי",
-   "role": "שיוך ותפקיד לבירור",
+   "name": "קרן שכטר",
+   "role": "מנכ״לית מכבי יזמות וניהול (לפי מידע שנמסר)",
    "org": "",
    "email": "",
    "phone": "",
    "image": "",
-   "bio": "איש קשר שנמסר לצורך גיבוש היוזמה. יש להשלים תפקיד, שיוך ותחום חיבור לפני הצגה כשותף מקצועי.",
+   "bio": "התפקיד נמסר על ידי מי ששלח את כרטיס הקשר ולא נבדק מול אתר ציבורי.",
    "source": "",
    "provided": true,
    "verified": false,
    "emailType": "מקצועי אישי",
    "phoneType": "כרטיס קשר שנמסר",
-   "note": "",
+   "note": "תפקיד לפי מידע שנמסר, טרם אומת. בכרטיס הקשר נשמרה בשם \"קרן מכבי\".",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
   },
   {
    "id": "aviad",
    "name": "אביעד פרידמן",
-   "role": "בכרטיס הקשר: יו״ר מתנ״סים",
-   "org": "",
+   "role": "ראש מנהלת תקומה (לפי מידע שנמסר)",
+   "org": "takuma",
    "email": "",
    "phone": "",
    "image": "",
-   "bio": "איש קשר שנמסר לצורך גיבוש היוזמה. יש להשלים תפקיד, שיוך ותחום חיבור לפני הצגה כשותף מקצועי.",
+   "bio": "התפקיד נמסר על ידי מי ששלח את כרטיס הקשר ולא נבדק מול אתר ציבורי.",
    "source": "",
    "provided": true,
    "verified": false,
    "emailType": "מקצועי אישי",
    "phoneType": "כרטיס קשר שנמסר",
-   "note": "",
+   "note": "תפקיד לפי מידע שנמסר, טרם אומת. בכרטיס הקשר נשמר גם התיאור \"יו״ר מתנ״סים\".",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
   },
   {
    "id": "lior",
    "name": "ליאור שימחה נצר סירני",
-   "role": "שם כפי שנשמר בכרטיס הקשר",
+   "role": "מזכ״ל התנועה הקיבוצית (לפי מידע שנמסר)",
    "org": "",
    "email": "",
    "phone": "",
    "image": "",
-   "bio": "איש קשר שנמסר לצורך גיבוש היוזמה. יש להשלים תפקיד, שיוך ותחום חיבור לפני הצגה כשותף מקצועי.",
+   "bio": "התפקיד נמסר על ידי מי ששלח את כרטיס הקשר ולא נבדק מול אתר ציבורי.",
    "source": "",
    "provided": true,
    "verified": false,
    "emailType": "מקצועי אישי",
    "phoneType": "כרטיס קשר שנמסר",
-   "note": "",
+   "note": "תפקיד לפי מידע שנמסר, טרם אומת.",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
   },
   {
    "id": "yachin",
    "name": "יכין זיק",
-   "role": "שיוך ותפקיד נוכחי לבירור",
+   "role": "ראש מטה (רמ״ט) השר לענייני הנגב והגליל (לפי מידע שנמסר)",
    "org": "",
    "email": "",
    "phone": "",
    "image": "",
-   "bio": "איש קשר שנמסר לצורך גיבוש היוזמה. יש להשלים תפקיד, שיוך ותחום חיבור לפני הצגה כשותף מקצועי.",
+   "bio": "התפקיד נמסר על ידי מי ששלח את כרטיס הקשר ולא נבדק מול אתר ציבורי.",
    "source": "",
    "provided": true,
    "verified": false,
    "emailType": "מקצועי אישי",
    "phoneType": "כרטיס קשר שנמסר",
-   "note": "",
+   "note": "תפקיד לפי מידע שנמסר, טרם אומת.",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
   },
   {
    "id": "lia",
-   "name": "ליה לשכה יוסי כראדי",
-   "role": "שם כפי שנשמר בכרטיס הקשר",
+   "name": "ליה (לשכת יוסי כראדי)",
+   "role": "עוזרת של ראש מערך הסייבר הלאומי (לפי מידע שנמסר)",
    "org": "",
    "email": "",
    "phone": "",
    "image": "",
-   "bio": "איש קשר שנמסר לצורך גיבוש היוזמה. יש להשלים תפקיד, שיוך ותחום חיבור לפני הצגה כשותף מקצועי.",
+   "bio": "התפקיד נמסר על ידי מי ששלח את כרטיס הקשר ולא נבדק מול אתר ציבורי.",
    "source": "",
    "provided": true,
    "verified": false,
    "emailType": "מקצועי אישי",
    "phoneType": "כרטיס קשר שנמסר",
-   "note": "",
+   "note": "תפקיד לפי מידע שנמסר, טרם אומת.",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
   },
@@ -2110,7 +2163,7 @@ window.NEGEV_DATA={
   {
    "id": "sharon",
    "name": "ד״ר שרון דניאל",
-   "role": "אחראי על החדשנות בכללית (לפי מידע שנמסר)",
+   "role": "מנהל החדשנות בכללית (לפי מידע שנמסר)",
    "org": "clalit",
    "email": "",
    "phone": "",
@@ -2124,74 +2177,6 @@ window.NEGEV_DATA={
    "note": "התפקיד נמסר על ידי מי שהכין את המפה ולא נבדק מול אתר הארגון או פרסום.",
    "checked": "2026-10-22",
    "phoneNote": "הנייד לא מוצג בגרסה המשותפת. אפשר לבקש אותו ממי ששלח את הקישור."
-  },
-  {
-   "id": "miriyev",
-   "name": "ד״ר Aslan Miriyev",
-   "role": "חוקר באוניברסיטת בן-גוריון",
-   "org": "labpai",
-   "email": "miriyev@bgu.ac.il",
-   "phone": "",
-   "image": "img-miriyev.jpg",
-   "bio": "איש קשר ציבורי של המעבדה לפי המפה.",
-   "source": "https://cris.bgu.ac.il/en/persons/aslan-miriyev",
-   "provided": false,
-   "verified": true,
-   "emailType": "מקצועי ציבורי",
-   "phoneType": "",
-   "note": "",
-   "checked": "2026-10-22"
-  },
-  {
-   "id": "shapiro",
-   "name": "פרופ׳ אמיר שפירו",
-   "role": "חוקר באוניברסיטת בן-גוריון",
-   "org": "brl",
-   "email": "ashapiro@bgu.ac.il",
-   "phone": "",
-   "image": "img-shapiro.jpg",
-   "bio": "איש קשר ציבורי של המעבדה לפי המפה.",
-   "source": "https://cris.bgu.ac.il/en/persons/amir-shapiro",
-   "provided": false,
-   "verified": true,
-   "emailType": "מקצועי ציבורי",
-   "phoneType": "",
-   "note": "",
-   "checked": "2026-10-22"
-  },
-  {
-   "id": "berman",
-   "name": "פרופ׳ סיגל ברמן",
-   "role": "חוקר באוניברסיטת בן-גוריון",
-   "org": "isel",
-   "email": "",
-   "phone": "",
-   "image": "img-berman.jpg",
-   "bio": "מוזכרת במפה כמובילת המעבדה. לא נמסר ערוץ קשר ישיר.",
-   "source": "https://cris.bgu.ac.il/en/persons/sigal-berman",
-   "provided": false,
-   "verified": true,
-   "emailType": "",
-   "phoneType": "",
-   "note": "",
-   "checked": "2026-10-22"
-  },
-  {
-   "id": "zarrouk-p",
-   "name": "פרופ׳ דוד זרוק",
-   "role": "חוקר באוניברסיטת בן-גוריון",
-   "org": "zarrouk",
-   "email": "",
-   "phone": "",
-   "image": "img-zarrouk.jpg",
-   "bio": "פרופיל מחקר ופרסומים עד 2026 לפי המפה. לא נמסר ערוץ קשר ישיר.",
-   "source": "https://cris.bgu.ac.il/en/persons/david-zarrouk",
-   "provided": false,
-   "verified": true,
-   "emailType": "",
-   "phoneType": "",
-   "note": "",
-   "checked": "2026-10-22"
   },
   {
    "id": "ron",
@@ -2287,10 +2272,6 @@ window.NEGEV_DATA={
   {
    "name": "חינוך מחבר",
    "url": "https://www.hinuch-mehaber.org/"
-  },
-  {
-   "name": "פורטל המחקר של אוניברסיטת בן־גוריון (תמונות החוקרים)",
-   "url": "https://cris.bgu.ac.il/en/persons/aslan-miriyev"
   }
  ],
  "logoCredits": [
@@ -2298,9 +2279,5 @@ window.NEGEV_DATA={
    "name": "לוגואים: אתרי הארגונים הרשמיים. הזכויות שמורות לבעליהם",
    "url": ""
   }
- ],
- "mapMeta": {
-  "title": "Physical AI בנגב: מפת עבודה",
-  "updated": "22.10.2026"
- }
+ ]
 };

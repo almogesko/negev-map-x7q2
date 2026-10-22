@@ -458,3 +458,75 @@ select.status{width:100%;height:44px}
   .rw-act .btn{white-space:nowrap;overflow-wrap:normal;font-size:.92rem;padding-inline:8px}
   .rw-act .btn:first-child:not(.save){flex:1.25}
 }
+
+/* ===== groups, calls, updated stamp, back to top ===== */
+.grp{border-top:1px solid var(--rule)}
+.grp:first-child{border-top:1px solid var(--accent)}
+.grp>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:10px 4px;cursor:pointer;font-weight:650;font-size:1.1rem;color:var(--ink)}
+.grp>summary::-webkit-details-marker{display:none}
+.grp>summary b{font-family:var(--mono);font-weight:500;font-size:.85rem;color:var(--ink-3);margin-inline-start:auto;margin-inline-end:8px}
+.grp>summary::after{content:"";width:9px;height:9px;border-inline-end:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:rotate(45deg);transition:transform .2s var(--ease);flex:none;margin-top:-4px}
+.grp[open]>summary::after{transform:rotate(-135deg);margin-top:4px}
+.grp>.rows{margin-top:0;border-top:0}
+.upd{display:block;font-size:.85rem;color:var(--ink-3)}
+.share-saved{margin:20px 0 4px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.calls{margin:24px 0 8px;display:flex;flex-direction:column;gap:12px;max-width:44rem}
+.calls h2{margin-top:18px}
+.call{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:14px 18px;border:1px solid var(--rule-strong);border-radius:12px;background:var(--paper);cursor:pointer}
+.call:hover{border-color:var(--accent)}
+.call:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.call-main{display:flex;flex-direction:column;min-width:0}
+.call strong{font-size:1.1rem}
+.count-down{flex:none;font-family:var(--mono);font-weight:700;color:var(--warn-ink);background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:8px;padding:6px 12px;font-size:.95rem}
+.call.plain{min-height:56px}
+.to-top{position:fixed;inset-inline-end:16px;bottom:24px;z-index:140;width:48px;height:48px;border-radius:50%;border:1px solid var(--rule-strong);background:var(--paper);box-shadow:0 6px 20px -6px rgba(10,31,68,.4);display:grid;place-items:center;padding:0}
+.to-top svg{width:22px;height:22px;fill:none;stroke:var(--ink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ft .tlink{color:var(--on-dark);border-color:var(--rule-strong);min-height:44px;font-size:.92rem;padding-top:10px}
+
+/* ===== phone: list starts on the first screen, search stays pinned ===== */
+@media (max-width:700px){
+  .legend3,.pghd .k{display:none}
+  .pghd{padding:14px 0 30px}
+  h1{font-size:1.55rem;margin:0 0 6px}
+  .pghd .lead{font-size:.95rem;-webkit-line-clamp:2}
+  /* filters become direct children of main so the search can stay sticky all the way down */
+  .filters,.fl{display:contents}
+  .cmd{position:sticky;top:var(--hd-h);z-index:60;background:var(--surface);margin:0;padding:10px var(--gut);border-bottom:1px solid var(--rule)}
+  .chips{background:var(--surface);margin:0;padding:10px var(--gut) 6px}
+  .fl-more{background:var(--surface);margin:0;padding:6px var(--gut) 14px}
+  .filter-foot.result-line{background:var(--surface);margin:0;padding:4px var(--gut) 10px;border-bottom:1px solid var(--rule-strong)}
+  .results{padding-top:4px}
+  /* touch targets: 44px and up */
+  .btn-sm,.save,.tlink,.toggle,.menu-pop button{min-height:44px}
+  .star{width:44px;height:44px}
+  select{height:48px}
+  .toggle input{width:24px;height:24px}
+  .grp>summary{min-height:52px;font-size:1.05rem}
+  .grp>.rows{margin-top:4px}
+  .to-top{bottom:calc(76px + env(safe-area-inset-bottom));inset-inline-end:14px}
+  .call{min-height:64px}
+}
+@media (max-width:700px){
+  .call{flex-direction:column;align-items:stretch;gap:10px}
+  .call strong{line-height:1.3}
+  .count-down{align-self:flex-start}
+  .calls{margin-top:8px;gap:10px}
+}
+
+/* add contact + save to phone */
+.add-btn{min-height:48px;padding:0 14px;gap:6px;white-space:nowrap}
+.add-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+.vcf{width:100%}
+.add-form{padding:56px 22px calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:14px}
+.add-form label,.add-form legend{font-size:.92rem;font-weight:600;color:var(--ink-2);display:flex;flex-direction:column;gap:6px}
+.add-form input:not([type=radio]),.add-form textarea{height:48px;padding:0 12px;border:1px solid var(--field-border);border-radius:8px;background:var(--paper);font-size:1rem;font-weight:400;color:var(--ink);width:100%}
+.add-form textarea{height:auto;padding:10px 12px}
+.add-form fieldset{border:0;display:flex;gap:12px;flex-wrap:wrap}
+.add-form legend{flex-basis:100%;padding:0;margin-bottom:6px}
+.add-form .radio{flex-direction:row;align-items:center;gap:8px;min-height:44px;font-weight:500}
+.add-form .radio input{width:22px;height:22px}
+.add-actions{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+@media (max-width:700px){
+  .add-btn span{display:none}
+  .add-btn{width:48px;padding:0;border-radius:12px;flex:none}
+}
